@@ -9,7 +9,8 @@ $(function(){
 
 
 function init(){
-  //alert("ciao")
+  alert("ciao");
+  alert("ooo");
   getPosition()
 }
 
