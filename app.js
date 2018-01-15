@@ -38,7 +38,7 @@ function getWeather(lat, lng) {
     var url = "http://api.openweathermap.org/data/2.5/forecast/daily?cnt=7&units=metric&lat="+lat+"&lon="+lng+"&appid=581881e2788f16b15fe091b3bb64ce37"
     $.getJSON(url)
     .done(function( data ) {
-      //console.log(data)
+      //console.log(data) //stampo il contenuto che mi ritorna la chiamata alle API
       renderWeather(data)
     })
     .fail(function() {
